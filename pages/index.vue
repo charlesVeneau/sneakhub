@@ -1,9 +1,6 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">sneakhub</h1>
-    </div>
+    <router-view />
   </div>
 </template>
 

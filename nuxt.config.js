@@ -17,7 +17,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/logo-white.png' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@300&display=swap'
+        href:
+          'https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@300&display=swap',
       },
     ],
   },
