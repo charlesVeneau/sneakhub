@@ -1,9 +1,15 @@
 <template>
   <div class="container">
-    <router-view />
+    <Header :page-name="home" />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      home: 'Home',
+    }
+  },
+}
 </script>
