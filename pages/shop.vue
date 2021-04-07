@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <Header :page-name="shop" />
   </div>
 </template>

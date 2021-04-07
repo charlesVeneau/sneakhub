@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 95.39 131.07">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffa000;
+      }
+
+      .cls-2 {
+        fill: #f57c00;
+      }
+
+      .cls-3 {
+        fill: #ffca28;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        fill-opacity: 0.2;
+      }
+
+      .cls-5 {
+        fill: #a52714;
+        opacity: 0.2;
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        fill: url(#Dégradé_sans_nom);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom" data-name="Dégradé sans nom" x1="175.07" y1="179.32" x2="176.11" y2="178.56" gradientTransform="matrix(95, 0, 0, -131, -16634.56, 23513.05)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.1"/>
+      <stop offset="0.14" stop-color="#fff" stop-opacity="0.08"/>
+      <stop offset="0.61" stop-color="#fff" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <title>firebase-icon</title>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_1-2" data-name="Calque 1">
+      <path class="cls-1" d="M.05,105.75,16.18,2.52a3,3,0,0,1,5.58-.95L38.44,32.69,45.09,20a3,3,0,0,1,5.27,0l45,85.72Z"/>
+      <path class="cls-2" d="M55.78,65.54,38.43,32.68.05,105.75Z"/>
+      <path class="cls-3" d="M95.39,105.75,83,29.29a3,3,0,0,0-5-1.61L.05,105.75l43.13,24.18a8.94,8.94,0,0,0,8.71,0l43.5-24.18Z"/>
+      <path class="cls-4" d="M83,29.29a3,3,0,0,0-5-1.61L62.52,43.19,50.36,20a3,3,0,0,0-5.28,0L38.43,32.69,21.75,1.57a3,3,0,0,0-5.57,1L.05,105.75H0l.05.06.43.21L78,28.44A3,3,0,0,1,83,30.05l12.26,75.77.12-.07L83,29.29ZM.19,105.61l16-102.35a3,3,0,0,1,5.58-1L38.44,33.42l6.65-12.66a3,3,0,0,1,5.27,0L62.28,43.42.19,105.61Z"/>
+      <path class="cls-5" d="M51.89,129.2a8.94,8.94,0,0,1-8.71,0l-43-24.11-.11.66,43.13,24.18a8.94,8.94,0,0,0,8.71,0l43.5-24.18-.12-.69L51.89,129.2Z"/>
+      <path id="b" class="cls-6" d="M82.91,29.3a3,3,0,0,0-5-1.6L62.47,43.2,50.35,20.05a3,3,0,0,0-5.26,0L38.46,32.71,21.84,1.6a3,3,0,0,0-5.55,1L.22,105.73l43,24.17a8.9,8.9,0,0,0,8.69,0l43.34-24.17L82.91,29.3Z"/>
+    </g>
+  </g>
+</svg>

@@ -7,7 +7,10 @@
 <script>
 export default {
   props: {
-    pageName: String,
+    pageName: {
+      type: String,
+      default: 'SneakHub',
+    },
   },
 }
 </script>
