@@ -18,6 +18,29 @@ body{
     margin: 0 auto;
 }
 
+// %btn{
+//   position: absolute;
+//   content: '';
+//   top: 50%;
+//   left: 50%;
+//   bottom: 50%;
+//   right: 50%;
+//   z-index: -10;
+//   background-color: rgba(255,255,255,0);
+//   transition: all 0.2s ease-in-out;
+//   &:hover{
+//     color: white;
+//     background-color: #f2973b;
+//     border-radius: 16px;
+//     top: -8px;
+//     left: -12px;
+//     bottom: -8px;
+//     right: -12px;
+//     padding: 8px;
+//     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.27);
+//   }
+// }
+
 .navbar{
   @extend .container;
   display: flex;
@@ -47,13 +70,21 @@ body{
     align-items: center;
     padding-left: 0;
     .menu-link{
+      position: relative;
       text-decoration: none;
       color: black;
       margin: 0 12px;
       transition: color 0.2s ease-out;
+      z-index: 1;
       &:hover{
         color: #f2973b
       }
+      &.nuxt-link-exact-active{
+        color: #f2973b
+      }
+      // &::before{
+      //   @extend %btn
+      // }
     }
   }
   .menu-second{
@@ -133,6 +164,7 @@ body{
     transform: scale(1.24);
   }
 }
+
 
 
 /*footer*/

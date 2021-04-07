@@ -6,10 +6,10 @@
     </div>
     <ul class="menu-main">
       <li class="menu-elt">
-        <router-link to="/" class="menu-link">Home</router-link>
+        <NuxtLink to="/" class="menu-link">Home</NuxtLink>
       </li>
       <li class="menu-elt">
-        <router-link to="/shop" class="menu-link">Shop</router-link>
+        <NuxtLink to="/shop" class="menu-link">Shop</NuxtLink>
       </li>
     </ul>
     <ul class="menu-second">
