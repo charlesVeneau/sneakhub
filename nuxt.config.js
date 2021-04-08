@@ -42,11 +42,30 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/firebase',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyDLIVSnCUlKPPkhgZ1_b4ZR7XuLEaWUtJQ',
+      authDomain: 'sneakhub-25a5e.firebaseapp.com',
+      projectId: 'sneakhub-25a5e',
+      storageBucket: 'sneakhub-25a5e.appspot.com',
+      messagingSenderId: '484877558885',
+      appId: '1:484877558885:web:09bad26babb70c69b3d28c',
+      measurementId: 'G-XGN4GT11FM',
+    },
+    services: {
+      firestore: true,
+    },
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // SPA mode
+  ssr: false,
 }
