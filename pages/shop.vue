@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header :page-name="shop" />
+    <ProductCard />
   </div>
 </template>
 
