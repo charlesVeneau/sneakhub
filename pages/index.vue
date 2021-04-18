@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <Header :page-name="home" />
+    <!-- <Header :page-name="home" /> -->
     <div class="main-card">
       <h2 class="card-title">Sneakhub Project</h2>
       <p class="card-text">
