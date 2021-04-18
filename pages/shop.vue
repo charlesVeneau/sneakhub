@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <product-card
-      v-for="(item, index) in items"
-      :key="index"
-      :item="item"
-      data-index="index"
-    />
+  <div class="container row">
+    <div class="row productCards">
+      <product-card
+        v-for="(item, index) in items"
+        :key="index"
+        :item="item"
+        data-index="index"
+      />
+    </div>
     <!-- <product-card :items="items" /> -->
   </div>
 </template>

@@ -3,8 +3,16 @@
 body{
   height: 100vh;
   background: {
-    color: #f3e69f;
+    color: #ffebc1;
   }
+}
+
+%glassEffect{
+  background: rgba(255, 255, 255, 0.60);
+  box-shadow: 0 3px 26px 0 rgba(31, 38, 135, 0.27);
+  backdrop-filter: blur(6.0px);
+  -webkit-backdrop-filter: blur(6.0px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
 }
 
 .container {
@@ -39,8 +47,8 @@ body{
       margin-left: 8px;
     }
     &:hover{
-      color: #f2973b;
-      fill: #f2973b;
+      color: #ff6b01;
+      fill: #ff6b01;
     }
   }
   .menu-main{
@@ -56,10 +64,10 @@ body{
       transition: color 0.2s ease-out;
       z-index: 1;
       &:hover{
-        color: #f2973b
+        color: #ff6b01
       }
       &.nuxt-link-exact-active{
-        color: #f2973b
+        color: #ff6b01
       }
     }
   }
@@ -72,7 +80,7 @@ body{
   @extend .container, .row;
   position: relative;
   margin: 1.6em auto 0 auto;
-  padding: 1.2em 0;
+  padding: 1.2em;
   &::before{
     position: absolute;
     top: 0;
@@ -83,11 +91,11 @@ body{
     content: "";
       border-radius: 3em;
       text-align: center;
-      background: #f2973b;
+      background: #ff6b01;
       /* fallback for old browsers */
-      background: -webkit-radial-gradient(ellipse at top, #f2973b, #ece254);
+      background: -webkit-radial-gradient(ellipse at top, #ff6b01 8%, #fdbf0b 16%);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: radial-gradient(ellipse at top, #f2973b, #ece254);
+      background: radial-gradient(ellipse at top, #ff6b01 8%, #fdbf0b 16%);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
@@ -97,11 +105,7 @@ body{
   margin: 0 auto;
   max-width: 840px;
   padding: 2.4em 4em;
-  background: rgba(255, 255, 255, 0.30);
-  box-shadow: 0 8px 26px 0 rgba(31, 38, 135, 0.27);
-  backdrop-filter: blur(6.0px);
-  -webkit-backdrop-filter: blur(6.0px);
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  @extend %glassEffect;
   border-radius: 2.4em;
   text-align: center;
   p{
@@ -145,7 +149,7 @@ body{
 
 /*footer*/
 .footer{
-  // background-color: #f2973b;
+  // background-color: #ff6b01;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -169,5 +173,64 @@ body{
       color: black;
       text-decoration: none;
     }
+  }
+}
+
+/* Product Card */
+
+.productCards{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dots{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    background-image: radial-gradient(#c9851f2a 1px, transparent 0);
+    border-radius: 2.4em;
+    background-size: 14px 14px;
+    background-position: 0 0;
+    z-index: -2;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    // right: 12px;
+    // bottom: 60%;
+    left: 12px;
+    background-color: #ff6b01;
+    border-radius: 2em;
+    background-size: 14px 60px;
+    background-position: 0 0;
+    z-index: -1;
+  }
+}
+
+.item-card{
+  @extend %glassEffect;
+  background: -webkit-radial-gradient(circle at center, rgba(255, 107, 1, 0.4) 0, rgba(255, 255, 255, 0.70) 100%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(circle at center, rgba(255, 107, 1, 0.4) 0, rgba(255, 255, 255, 0.70) 80%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 26%;
+  text-align: center;
+  border-radius: 2em;
+  margin-bottom: 3em;
+  color: #49439d;
+  .productCard-img{
+    width: 80%;
+  }
+  .productCard-title{
+    margin: 0;
+  }
+  .productCard-text{
+    margin: 0.6em 0 1.4em 0;
   }
 }

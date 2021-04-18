@@ -1,7 +1,8 @@
 <template>
-  <div class="item-card">
-    <h4>{{ item.brand }}</h4>
-    <p>{{ item.name }}</p>
+  <div class="item-card dots">
+    <img :src="item.imgs[0]" alt="" class="productCard-img" />
+    <h4 class="productCard-title">{{ item.brand }} {{ item.name }}</h4>
+    <p class="productCard-text">${{ item.price }}</p>
     <!-- <p>this is a card</p> -->
   </div>
 </template>
