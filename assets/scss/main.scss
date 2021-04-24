@@ -213,6 +213,24 @@ body{
   }
 }
 
+.product-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding-top: 1.4em;
+  margin: 0 auto;
+  padding-bottom: 0;
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6em;
+    border: 1px solid #2f2f2f36;
+    border-radius: 3em;
+  }
+}
+
 .item-card{
   @extend %glassEffect;
   background: -webkit-radial-gradient(circle at center, rgba(255, 107, 1, 0.4) 0, rgba(255, 255, 255, 0.70) 100%);
